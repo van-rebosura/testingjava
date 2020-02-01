@@ -1,10 +1,7 @@
 package com.rebosura.test;
 
 
-import com.rebosura.oop.Book;
-import com.rebosura.oop.Bookmark;
-import com.rebosura.oop.Movie;
-import com.rebosura.oop.Shareable;
+import com.rebosura.oop.*;
 
 public class oopTest {
     public static void main(String[] args) {
@@ -13,5 +10,7 @@ public class oopTest {
         book1.share();
         Bookmark movie1 = new Movie("movieName", "movieDesc", "releaseDate");
         System.out.println(movie1);
+        Bookmark web = new Weblink("linkname", "linkdesc", "urlurl");
+        System.out.println(web);
     }
 }
